@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <script src="https://kit.fontawesome.com/117a0da7a9.js" crossorigin="anonymous"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+<body>
+  <main>
+
+    <div id="user-create">
+      <input type="text" class="inputText" id="firstname" placeholder="First Name" required />
+      <br />
+      <input type="text" class="inputText" id="lastname" placeholder="Last Name" required/>
+      <br />
+      <input type="text" class="inputText" id="job" placeholder="Job" required/>
+      <br>
+      <img value="/images/user.png" onclick="openImageSelectDiv()" id="btn-select-image" src="/images/user.png" onclick="selectImage(this)">
+      <br>
+      <div id="images-box">
+        <img name="/images/01.png" src="/images/01.png" onclick="selectImage(this)">
+        <img name="/images/02.png" src="/images/02.png" onclick="selectImage(this)">
+        <img name="/images/03.png" src="/images/03.png" onclick="selectImage(this)">
+        <img name="/images/04.png" src="/images/04.png" onclick="selectImage(this)">
+        <img name="/images/05.png" src="/images/05.png" onclick="selectImage(this)">
+        <img name="/images/06.png" src="/images/06.png" onclick="selectImage(this)">
+        <img name="/images/07.png" src="/images/07.png" onclick="selectImage(this)">
+        <img name="/images/08.png" src="/images/08.png" onclick="selectImage(this)">
+        <img name="/images/09.png" src="/images/09.png" onclick="selectImage(this)">
+        <img name="/images/010.png" src="/images/010.png" onclick="selectImage(this)">
+        <img name="/images/011.png" src="/images/011.png" onclick="selectImage(this)">
+        <img name="/images/012.png" src="/images/012.png" onclick="selectImage(this)">
+        <img name="/images/013.png" src="/images/013.png" onclick="selectImage(this)">
+        <img name="/images/014.png" src="/images/014.png" onclick="selectImage(this)">
+        <img name="/images/015.png" src="/images/015.png" onclick="selectImage(this)">
+        <img name="/images/016.png" src="/images/016.png" onclick="selectImage(this)">
+      </div>
+    </div>
+
+    <div id="control-btn">
+      <button class="button" onclick="usersListing(users)">Listing Users</button>
+      <button class="button" id="btn-add" onclick="createUser()">Creat User</button>
+      <button class="button" class="cleanInput" onclick="cleanInput()">Clear Inputs</button>
+      <div class="button" id="control-panel">
+        <select id="filter">
+          <option value="job">Job</option>
+          <option value="firstName">First Name</option>
+          <option value="lastName">Last Name</option>
+        </select>
+        <input type="text" class="inputText" id="search-input" placeholder="Search" onchange="searchUser()" />
+    <button id="btn-search"><i class="fa-solid fa-magnifying-glass fa-xl" style="color: #0b50f0;" onclick="searchUser()"></i></button>
+      </div>
+    </div>
+
+    <div id="user-list"></div>
+
+  </main>
+  <script src="users.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

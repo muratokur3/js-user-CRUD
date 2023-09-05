@@ -1,0 +1,201 @@
+*,
+body {
+  font-family: monospace;
+  box-sizing: border-box;
+}
+
+#user-create {
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-evenly;
+  align-items: center;
+}
+.inputText {
+  width: 250px;
+  height: 30px;
+  border-radius: 7px;
+  background-color: whitesmoke;
+  padding: 5px;
+}
+
+#btn-select-image {
+  width: 25%;
+  height: 40%;
+  padding: 1%;
+  border-radius:100%;
+  border: none;
+  background-color: gainsboro;
+  background: none;
+}
+#btn-select-image:hover {
+opacity: .8;
+}
+#images-box {
+  width: 40%;
+  height: 50%;
+  background-color: orange;
+  position: absolute;
+  position: fixed;
+  top: 1%;
+  right: 1%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 2%;
+  border-radius: 20px;
+  visibility: hidden;
+  z-index: 3;
+}
+#images-box img {
+  width: 24%;
+  height: 24%;
+  margin: 1% 0 0 1%;
+  cursor: pointer;
+}
+#images-box img:hover {
+  opacity: 0.5;
+}
+
+#control-btn {
+  width: 100%;
+  height: 8vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background-color: antiquewhite;
+}
+
+.button {
+  width: 20%;
+  height: 80%;
+  border-radius: 30px;
+  border: none;
+  background: none;
+ border: 1px dotted grey;
+  padding: 5px;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: black;
+  font-weight: 100;
+  transition: 1s;
+}
+
+button:hover {
+  cursor: pointer;
+  transition: 0.9s;
+  background-color: orange;
+}
+
+#control-panel {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+#filter {
+  width: 30%;
+  height: 50px;
+  font-size: 5rem;
+  direction:rtl;
+}
+
+#search-input {
+  width: 40%;
+  height: 50%;
+  border-radius: 10px;
+  border: none;
+  font-size: 1.2rem;
+}
+#btn-search{
+  width: 20%;
+  height: 70%;
+  font-size: 1.2rem;
+  background: none;
+border: none;
+cursor: pointer;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#user-list {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.user-card {
+  width: 20%;
+  height: 25vh;
+  padding: 1%;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+  margin: 0.1%;
+  margin-top: 1%;
+  display: flex;
+  color: white;
+  flex-direction: row;
+  font-size: .7rem;
+  position: relative;
+}
+
+.user-card:hover {
+  width: 35%;
+  height: 40vh;
+  margin: 0;
+  font-size: 1.1rem;
+
+}
+
+.profile-image {
+  width: 40%;
+  height: 55%;
+  margin-top: 10%;
+  border-radius: 10%;
+}
+
+.user-details {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 5%;
+  align-items: center;
+}
+
+
+.isimh2 {
+  color:rgba(0, 0, 0, 0.511);
+  background-color: rgba(255, 254, 253, 0.379);
+  border-radius: 20px;
+  padding: 3%;
+  text-align: center;
+}
+
+.btn-ubdate {
+  font-size: 1rem;
+  color: orange;
+  background-color: rgba(255, 255, 255, 0.169);
+  position: absolute;
+  left: 10px;
+  bottom: 30px;
+}
+
+.btnDelete {
+  font-size: 1rem;
+  color: brown;
+  position: absolute; 
+   background-color: rgba(255, 255, 255, 0.169);
+  left: 10px;
+  bottom: 10px;
+}
